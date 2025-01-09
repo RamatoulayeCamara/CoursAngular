@@ -6,3 +6,18 @@
      color: rgb(208, 255, 0);
      background-color: black;
 }
+
+
+.ipslVal{
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+.ipslLabel{
+  @extend .ipslVal;
+  @extend .text-primary;
+  text-decoration: underline;
+
+}
+

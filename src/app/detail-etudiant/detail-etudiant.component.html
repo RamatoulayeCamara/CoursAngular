@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="row  border border-2 border-primary m-1 rounded">
+
+    <div class="bg-primary  p-2 rounded text-light col-12 ">
+      etudiant {{etudiant?.code}}
+    </div>
+
+    <div class="col-12 col-lg col-md border m-2 p-2">
+      <span class="ipslLabel">Prenom: </span>
+      <span class="ipslVal">{{etudiant?.prenom}} </span> <br>
+
+      <span>Nom: </span>
+      <span>{{etudiant?.nom}} </span> <br>
+
+      <span>Adresse: </span>
+      <span>{{etudiant?.adresse}} </span> <br>
+
+      <span>Telephone: </span>
+      <span>{{etudiant?.telephone}} </span> <br>
+
+    </div>
+
+    <div class="col-12col-lg col-md border m-2 p-2">
+      <span>Classe : </span>
+      <span>{{etudiant?.classe?.code}} </span><br>
+
+      <span>Filliere :</span>
+      <span>{{etudiant?.classe?.filliere?.nom}} </span><br>
+
+      <span>Departement:</span>
+      <span>{{etudiant?.classe?.filliere?.dept?.nom}} </span><br>
+
+    </div>
+
+    <div class="col-12 col-lg col-md border m-2 p-2">
+      <span>Numero : </span>
+      <span>{{carte?.id}} </span><br>
+
+      <span>Date de delivrance :</span>
+      <span>{{carte?.dateDeliv | date : 'yyyy-MM-dd'}} </span><br>
+
+      <span>Annee Academique :</span>
+      <span>{{carte?.anneDebut}} </span><br>
+
+      <span>Proprietaire :</span>
+      <span>{{carte?.etudiant?.prenom}}  {{carte?.etudiant?.nom}} </span><br>
+
+
+      <span> filliere:</span>
+      <span>{{carte?.filliere?.nom}} </span><br>
+
+    </div>
+
+
+  </div>
+
+</div>
